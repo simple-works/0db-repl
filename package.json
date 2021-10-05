@@ -1,20 +1,22 @@
 {
   "name": "0db-repl",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "0db REPL playground for testing 0db database.",
   "main": "bin/index.js",
   "bin": {
     "0db": "./bin/index.js"
   },
   "scripts": {
-    "start": "npm link 0db && node ./bin/index.js",
-    "dev": "npm link 0db && nodemon ./bin/index.js --ignore db.json"
+    "start": "node ./bin/index.js",
+    "dev": "npm link 0db && nodemon ./bin/index.js --ignore db.json",
+    "readme": "markdown-toc -i README.md"
   },
   "author": "Ambratolm <ambratolm@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "0db": "^0.0.0",
+    "0db": "^0.0.1",
     "colors": "^1.4.0",
+    "faker": "^5.5.3",
     "local-repl": "^4.0.0"
   }
 }
